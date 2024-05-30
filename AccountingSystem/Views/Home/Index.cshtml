@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="auth-wrapper">
+    <div class="auth-content">
+        <div class="card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h4 class="mb-3 f-w-400">Login to your account</h4>
+                        <form method="post">
+                            <div class="form-group mb-3">
+                                <label class="floating-label" for="phone-or-id">Phone Number or ID</label>
+                                <input type="text" class="form-control" id="phone-or-id" placeholder="">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="floating-label" for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="">
+                            </div>
+                            <div class="custom-control custom-checkbox mb-4">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Remember me</label>
+                            </div>
+                            <button class="btn btn-primary btn-block mb-4">Sign in</button>
+                            <p class="mb-2 text-muted">Forgot password? <a href="#" class="f-w-400">Reset</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-block d-none auth-img">
+                    <img src="~/assets/images/auth-bg.jpg" alt="Accounting System Login" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
